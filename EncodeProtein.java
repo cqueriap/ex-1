@@ -8,16 +8,16 @@ public class EncodeProtein
 	public static String translate(String rna)
 	{
 	   String peptide = "";
-      System.out.println("RNA length = "+ rna.length());
-      for(int i = 0; i < rna.length(); i = i+3)
-      {
-         String codon = rna.substring(i, i+3);
-         String protein = codonTable(codon);
-         //System.out.println(codon);
-         peptide = peptide + protein;
+          
+           for(int i = 0; i < rna.length(); i = i+3)
+           {
+           	String codon = rna.substring(i, i+3);
+         	String protein = codonTable(codon);
+         	//System.out.println(codon);
+         	peptide = peptide + protein;
          
-      }
-      return peptide;   
+      	   }
+      	return peptide;   
 	} 
 	
 	public static String codonTable(String codon)
